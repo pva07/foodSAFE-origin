@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodSAFE</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="shortcut icon" href="./dieta.png" type="image/x-icon">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="containerSidebar">
+            <a href="index.html">Início</a>
+        </div>
+        <div class="containerSidebar">
+            <a href="#quem">Quem somos</a>
+        </div>
+        <div class="containerSidebar">
+            <a href="#piramide">Pirâmide</a>
+        </div>
+        <div class="containerSidebar">
+            <a href="calc.html">IMC</a>
+        </div>
+    </div>
+    <header id="header">
+        <h1>Food<span>SAFE.</span></h1>
+        <nav>
+            <a href="./index.html">Início</a>
+            <a href="./bot.html">ChatBot</a>
+            <a href="#quem">Quem Somos</a>
+            <a href="#piramide">Pirâmide</a>
+            <a href="./calc.html">IMC</a>
+        </nav>
+        <i onclick="toggleSidebar()" class="fa-solid fa-bars"></i>
+    </header>
+    <main>
+        <div class="divtxt">
+            <h1><span id="autoEscrever"></span></h1>
+            <p>Bem-Vindos ao site da foodSAFE, aqui você poderá ver o nosso site e conhecer o nosso grupo, espero que gostem.</p>
+            <a href="./calc.html">Projeto</a>
+        </div>
+        <img src="./dieta.png">
+    </main>
+    <section class="sec">
+        <img src="./escudo (1).png">
+        <div class="divtxt2">
+            <h1>Segurança Alimentar</h1>
+            <p>Na busca por alimentos saudáveis e seguros, a higiene alimentar desempenham um papel de proteção na saúde pública e na garantia dos produtos. Neste espaço, proporcionamos informações essenciais e diretrizes práticas para garantir que os alimentos que consumimos sejam livres de substâncias nocivas.</p>
+        </div>
+    </section>
+
+    
+    <section id="piramide" class="piramide">
+        <div class="divtxt3">
+            <h1>O que é a pirâmide alimentar?</h1>
+            <p>A pirâmide alimentar é uma representação gráfica que reúne informações importantes a respeito dos grupos de alimentos presentes em nossa dieta. Seu principal objetivo é garantir o bem-estar nutricional da população, informando-a, principalmente, sobre as porções recomendadas de cada tipo de alimento.</p>
+        </div>
+        <img src="./pyramid3-removebg-preview.png">
+    </section>
+    <section id="quem" class="quem">
+        <h1>Quem somos?</h1>
+        <p>Olá, somos um grupo de jovens e fizemos este site com a intenção de auxiliar pessoas que tenham qualquer tipo de problema / limitação com os alimentos, pois qualquer impasse pode acabar resultando em complicações.</p>
+        <div class="pessoas">
+            <div onclick="window.location.href = './julia1.html'" class="cardPessoas">
+                <img src="./julia1.PNG">
+                <h2>Julia Soares</h2>
+            </div>
+            <div onclick="window.location.href = './pedro.html'" class="cardPessoas">
+                <img src="./pedro.PNG">
+                <h2>Pedro Viana</h2>
+            </div>
+            <div onclick="window.location.href = './rafael.html'" class="cardPessoas">
+                <img src="./rafael.PNG">
+                <h2>Rafael Vienna</h2>
+            </div>
+            <div onclick="window.location.href = './julia2.html'" class="cardPessoas">
+                <img src="./julia2.PNG">
+                <h2>Julia Lemos</h2>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script>
+        const typed = new Typed('#autoEscrever', {
+        strings: ['FoodSAFE.','Saúde','Segurança'],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+    });
+    </script>
+</body>
+</html>

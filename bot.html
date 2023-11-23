@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodSAFE</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="shortcut icon" href="./dieta.png" type="image/x-icon">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="containerSidebar">
+            <a href="./index.html">Início</a>
+        </div>
+        <div class="containerSidebar">
+            <a href="./acoes.html">IMC</a>
+        </div>
+    </div>
+    <header id="header">
+        <h1>Food<span>SAFE.</span></h1>
+        <nav>
+            <a href="./index.html">Início</a>
+            <a href="./bot.html">ChatBot</a>
+            <a href="./calc.html">IMC</a>
+        </nav>
+        <i onclick="toggleSidebar()" class="fa-solid fa-bars"></i>
+    </header>
+    <main>
+        <div class="chat-container">
+            <div id="chat-display"></div>
+            <input type="text" id="user-input" placeholder="Digite sua pergunta...">
+            <button onclick="askQuestion()">Enviar</button>
+        </div>
+    </div>
+</main>
+</body>
+</html>

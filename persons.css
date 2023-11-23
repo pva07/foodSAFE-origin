@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    scroll-behavior: smooth;
+}
+
+header{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 11vh;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+
+header h1{
+    margin-left: 5%;
+}
+
+header span{
+    color: #033C2E;
+}
+
+header nav {
+    margin-right: 5%;
+    width: 18%;
+}
+
+header nav a{
+    text-decoration: none;
+    color:black;
+    margin: 3%;
+}
+
+header nav a:hover{
+    color: #033C2E;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+main img{
+    border-radius: 1rem;
+}
+main h1{
+    color: #033C2E;
+    margin: 1%;
+}
+main p{
+    width: 30%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5vh;
+}
+main a{
+    background-color: #033C2E;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    margin-top: 1%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+main a:hover{
+    background-color: #043025;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #033C2E;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    color: white;
+}
+
+.containerSidebar{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    padding: 15px;
+}
+.containerSidebar a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    header .fa-solid{
+        display: flex;
+        margin-right: 8%;
+    }
+    header nav{
+        display: none;
+    }
+    header nav a{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .mainUser img{
+        display: none;
+    }
+    .mainUser p{
+        width: 90%;
+    }
+    .mainUser a{
+        width: 40%;
+        margin-top: 3%;
+    }
+}
